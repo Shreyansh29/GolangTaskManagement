@@ -1,6 +1,6 @@
 package taskmanagement
 
-type Task interface {
+type Task interface{
 	// Task Operations
 	InitializeTask()
 	StartTaskExecution()
