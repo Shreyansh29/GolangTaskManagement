@@ -3,10 +3,11 @@ package taskmanagement
 type Job interface {
 	// Job Operations
 	InitializeJob()
-	StartJobExecution()
-	CompleteJob()
-	CancelJob()
-	JobTimeout()
+	GenerateTasks(request any)
+	StartExecution()
+	Complete()
+	Cancel()
+	Timeout()
 	EnqueueTasks(tasks []Task)
 
 	// Get Job Details
